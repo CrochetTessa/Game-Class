@@ -39,7 +39,7 @@ export function playDeferredSounds() {
   }
 }
 
-export var soundArray = ["Spooky Audio.mp3"]; //list of sounds loaded
+export var soundArray = []; //list of sounds loaded
 
 //Here is where all the Sound File Players Start
 
@@ -60,7 +60,7 @@ ambientSound.player.volume.value = -2; //turn down volume
 export var adventureMusic = new soundFile("Spooky Audio.mp3");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
-adventureMusic.player.volume.value = -3;
+adventureMusic.player.volume.value = +1;
 
 export var villageMusic = new soundFile("phaserDown2.mp3");
 soundArray.push(villageMusic);
