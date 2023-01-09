@@ -52,12 +52,12 @@ soundArray.push(paddleSound);
 export var scoreSound = new soundFile("tap-percussive.mp3");
 soundArray.push(scoreSound);
 
-export var ambientSound = new soundFile("Spooky Audio.mp3");
+export var ambientSound = new soundFile("");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -2; //turn down volume
 
-export var adventureMusic = new soundFile("");
+export var adventureMusic = new soundFile("Spooky Audio.mp3");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
 adventureMusic.player.volume.value = -16;
