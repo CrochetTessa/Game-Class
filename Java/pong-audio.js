@@ -56,7 +56,6 @@ export var ambientSound = new soundFile("Spooky Audio.mp3");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -2; //turn down volume
-ambientSound.player.speed.playbackRate = 0.5;
 
 export var adventureMusic = new soundFile("Spooky Audio.mp3");
 soundArray.push(adventureMusic);
