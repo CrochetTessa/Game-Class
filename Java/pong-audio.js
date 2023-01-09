@@ -39,11 +39,11 @@ export function playDeferredSounds() {
   }
 }
 
-export var soundArray = []; //list of sounds loaded
+export var soundArray = ["Spooky Audio.mp3"]; //list of sounds loaded
 
 //Here is where all the Sound File Players Start
 
-export var wallSound = new soundFile("Adventure_Meme.mp3"); //load sound
+export var wallSound = new soundFile("Spooky Audio.mp3"); //load sound
 soundArray.push(wallSound); //add sound to list of sounds
 
 export var paddleSound = new soundFile("tap-resonant.mp3");
