@@ -60,7 +60,7 @@ ambientSound.player.volume.value = -2; //turn down volume
 export var adventureMusic = new soundFile("Spooky Audio.mp3");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
-adventureMusic.player.volume.value = -16;
+adventureMusic.player.volume.value = -3;
 
 export var villageMusic = new soundFile("phaserDown2.mp3");
 soundArray.push(villageMusic);
