@@ -8,7 +8,7 @@ class soundFile {
   constructor(file, deferPlay) {
     //this.deferPlay = false;
     this.player = new Tone.Player({
-      url: "./sounds/" + file,
+      url: "./MP3/" + file,
       loop: false,
       autostart: false
     }).toMaster();
@@ -39,11 +39,11 @@ export function playDeferredSounds() {
   }
 }
 
-export var soundArray = ["./MP3/Spooky Audio.mp3"]; //list of sounds loaded
+export var soundArray = ["Spooky Audio.mp3"]; //list of sounds loaded
 
 //Here is where all the Sound File Players Start
 
-export var wallSound = new soundFile("./MP3/Spooky Audio.mp3"); //load sound
+export var wallSound = new soundFile(); //load sound
 soundArray.push(wallSound); //add sound to list of sounds
 
 export var paddleSound = new soundFile("tap-resonant.mp3");
@@ -52,7 +52,7 @@ soundArray.push(paddleSound);
 export var scoreSound = new soundFile("tap-percussive.mp3");
 soundArray.push(scoreSound);
 
-export var ambientSound = new soundFile("Adventure_Meme.mp3");
+export var ambientSound = new soundFile("Spooky Audio.mp3");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -20; //turn down volume
